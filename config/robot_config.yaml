@@ -1,0 +1,15 @@
+robot_parameters:
+  # connection.ip_address: 192.168.0.37 
+  connection.ip_address: 192.168.0.31
+  # connection.ip_address: 192.168.0.14
+  # connection.ip_address: 192.168.1.157
+  connection.port: 80
+  # connection.port: 443
+  connection.username: Admin
+  connection.password: robotics
+  utility.send_keepalive: true
+  utility.keepalive_interval: 120.0
+  utility.send_joint_states: true
+  utility.joint_states_hz: 8.0
+  dipc.retry_max: 100
+  dipc.retry_delay_s: 0.25

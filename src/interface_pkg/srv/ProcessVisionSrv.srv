@@ -1,0 +1,35 @@
+#
+---
+bool status
+string message
+
+# Segmented images
+sensor_msgs/Image img_masks_all
+sensor_msgs/Image img_background
+sensor_msgs/Image img_hexagon
+sensor_msgs/Image img_circle
+sensor_msgs/Image img_drawn_rectangle
+
+# Grasp results per object
+interface_pkg/GraspResult grasp_hexagon
+interface_pkg/GraspResult grasp_circle
+interface_pkg/GraspResult pose_rectangle
+
+#cone poses
+geometry_msgs/Pose[] cone_poses
+
+# Zigzag scan pattern
+geometry_msgs/PoseArray zigzag_poses
+geometry_msgs/Point[] zigzag_path3d
+
+# Inlier point clouds (RANSAC plane inliers)
+sensor_msgs/PointCloud2 inlier_pcd_hexagon
+sensor_msgs/PointCloud2 inlier_pcd_background
+sensor_msgs/PointCloud2 inlier_pcd_circle
+sensor_msgs/PointCloud2 inlier_pcd_drawn
+
+# Plane models [a, b, c, d] for ax+by+cz+d=0
+float64[4] plane_model_hexagon
+float64[4] plane_model_background
+float64[4] plane_model_circle
+float64[4] plane_model_drawn

@@ -1,0 +1,27 @@
+tools:
+  - id: gripper_1
+    collision:
+      type: mesh                        # "mesh" loads STL, "cylinder"/"box" use primitives
+      mesh_file: gripper_1.stl             # filename inside TOOL_MESHES_DIR
+      scale: [0.001, 0.001, 0.001]     # STL units → metres (1.0 if already in metres)
+    collision_pose_in_flange:
+      translation: [0.035, 0.0, 0.0]    # small X offset from flange face
+      rpy: [0.0, 1.5707963268, 0.0]    # 90° around Y → mesh Z aligns with flange X
+
+  - id: gripper_2
+    collision:
+      type: mesh
+      mesh_file: gripper_2.stl
+      scale: [0.001, 0.001, 0.001]
+    collision_pose_in_flange:
+      translation: [0.035, 0.0, 0.0]
+      rpy: [0.0, 1.5707963268, 0.0]
+
+  - id: gripper_3
+    collision:
+      type: mesh
+      mesh_file: gripper_3.stl
+      scale: [0.001, 0.001, 0.001]
+    collision_pose_in_flange:
+      translation: [0.035, 0.0, 0.0]
+      rpy: [0.0, 1.5707963268, 0.0]

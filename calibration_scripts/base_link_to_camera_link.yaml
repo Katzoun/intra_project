@@ -1,0 +1,9 @@
+base_link_to_camera_link:
+  parent_frame: base_link
+  child_frame: camera_link
+  x: 0.409542
+  y: 1.04715
+  z: 0.942242
+  roll: 3.116889963
+  pitch: 0.2316676164
+  yaw: 3.1131234502

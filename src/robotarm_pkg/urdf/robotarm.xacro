@@ -1,0 +1,202 @@
+<?xml version="1.0" ?>
+<robot name="robotarm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find robotarm_pkg)/urdf/materials.xacro" />
+<xacro:include filename="$(find robotarm_pkg)/urdf/robotarm.trans" />
+<xacro:include filename="$(find robotarm_pkg)/urdf/robotarm.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.0011656606666003504 -0.00011127786600189595 0.0985691713362607" rpy="0 0 0"/>
+    <mass value="43.321834194728716"/>
+    <inertia ixx="0.254824" iyy="0.26074" izz="0.191484" ixy="-0.000567" iyz="-0.000372" ixz="-0.003894"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gofaLink1_1">
+  <inertial>
+    <origin xyz="0.08775396256757084 0.002893616666975796 0.1378283174314958" rpy="0 0 0"/>
+    <mass value="62.51980324184264"/>
+    <inertia ixx="0.432285" iyy="0.648762" izz="0.530762" ixy="-0.011248" iyz="-0.008525" ixz="-0.212957"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.0 -0.214" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.0 -0.214" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gofaLink2_1">
+  <inertial>
+    <origin xyz="0.31995365374658724 -0.054321420061314976 -2.7314906564379626e-07" rpy="0 0 0"/>
+    <mass value="70.93354798589776"/>
+    <inertia ixx="0.149369" iyy="4.624741" izz="4.56467" ixy="-0.067787" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.15 0.09515 -0.399" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.15 0.09515 -0.399" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gofaLink3_1">
+  <inertial>
+    <origin xyz="0.012899169796362742 0.09273702866323792 0.02490709910095318" rpy="0 0 0"/>
+    <mass value="26.381731962599428"/>
+    <inertia ixx="0.13578" iyy="0.109622" izz="0.102204" ixy="0.002633" iyz="0.005085" ixz="-0.024959"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.857 0.0853 -0.399" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.857 0.0853 -0.399" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gofaLink4_1">
+  <inertial>
+    <origin xyz="0.24142600169891282 0.06277136599401421 -6.660927853729959e-08" rpy="0 0 0"/>
+    <mass value="32.07373529182173"/>
+    <inertia ixx="0.109104" iyy="0.893836" izz="0.956574" ixy="-0.193212" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.953 0.0003 -0.509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.953 0.0003 -0.509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gofaLink5_1">
+  <inertial>
+    <origin xyz="-0.01471488169844859 -0.07856679038657811 0.04275415132694682" rpy="0 0 0"/>
+    <mass value="23.63754712652309"/>
+    <inertia ixx="0.089965" iyy="0.106463" izz="0.085163" ixy="0.001415" iyz="-0.004125" ixz="0.012969"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.492883 -0.0752 -0.509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.492883 -0.0752 -0.509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gofaLink6_1">
+  <inertial>
+    <origin xyz="0.012750653728679673 0.0002398166174549805 -0.00034201577003445394" rpy="0 0 0"/>
+    <mass value="1.1500367477209656"/>
+    <inertia ixx="0.001012" iyy="0.000597" izz="0.000601" ixy="-1e-06" iyz="-5e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.560883 -0.0007 -0.589" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.560883 -0.0007 -0.589" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robotarm_pkg)/meshes/gofaLink6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="revolute">
+  <origin xyz="0.0 0.0 0.214" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="gofaLink1_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+  <limit lower="-4.712389" upper="4.712389" velocity="3.054" effort="100.0"/>
+</joint>
+
+<joint name="Revolute 2" type="revolute">
+  <origin xyz="0.15 -0.09515 0.185" rpy="0 -1.5707963268 0"/>
+  <parent link="gofaLink1_1"/>
+  <child link="gofaLink2_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit lower="-3.1416" upper="3.1416" velocity="3.054" effort="100.0"/>
+</joint>
+
+<joint name="Revolute 3" type="revolute">
+  <origin xyz="0.707 0.00985 0.0" rpy="0 1.5707963268 0"/>
+  <parent link="gofaLink2_1"/>
+  <child link="gofaLink3_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit lower="-3.9270" upper="1.48353" velocity="3.054" effort="100.0"/>
+</joint>
+
+<joint name="Revolute 4" type="revolute">
+  <origin xyz="0.096 0.085 0.11" rpy="0 0 0"/>
+  <parent link="gofaLink3_1"/>
+  <child link="gofaLink4_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+  <limit lower="-3.1416" upper="3.1416" velocity="3.054" effort="100.0"/>
+</joint>
+
+<joint name="Revolute 5" type="revolute">
+  <origin xyz="0.539883 0.0755 0.0" rpy="0 0 0"/>
+  <parent link="gofaLink4_1"/>
+  <child link="gofaLink5_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+  <limit lower="-3.1416" upper="3.1416" velocity="3.054" effort="100.0"/>
+</joint>
+
+<joint name="Revolute 6" type="revolute">
+  <origin xyz="0.068 -0.0745 0.08" rpy="0 0 0"/>
+  <parent link="gofaLink5_1"/>
+  <child link="gofaLink6_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+  <limit lower="-4.7124" upper="4.7124" velocity="3.054" effort="100.0"/>
+</joint>
+
+</robot>

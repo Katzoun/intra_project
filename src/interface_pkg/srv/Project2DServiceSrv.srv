@@ -1,0 +1,6 @@
+#
+string file_path
+---
+bool status
+string message
+sensor_msgs/Image img_output

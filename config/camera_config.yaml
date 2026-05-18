@@ -1,0 +1,44 @@
+camera_controller_parameters:
+  # connection.device_id: PhotoneoTL_DEV_UserExamples-frames_static
+  connection.device_id: PhotoneoTL_DEV_2019-06-011-LC3
+  output.directory: frames
+  output.image_format: png
+  output.point_cloud_format: ply
+  output.save_mesh: true
+  output.save_depth_map: true
+  output.save_point_cloud: true
+  output.save_normal_map: true
+  capture.trigger_mode: Software
+  capture.ambient_light_suppression: true
+  capture.coding_strategy: Interreflections
+  point_cloud.send_texture: true
+  point_cloud.send_point_cloud: true
+  point_cloud.send_normal_map: true
+  point_cloud.send_depth_map: true
+  point_cloud.send_confidence_map: true
+  processing.interreflections_filtering: true
+  processing.interreflection_filter_strength: 0.5
+  processing.max_inaccuracy: 2.0
+  coordinate_space.coordinate_space: RobotSpace
+  coordinate_space.transformation_space_selector: Robot
+  tf.use_transform: true
+  output.publish_topics: true
+  output.save_to_file: false
+  tf.frame_id: robot_base
+  tf.default_transform:
+  - -0.9686605
+  - 0.0251787
+  - 0.2471088
+  - 399.542
+  - 0.0305149
+  - 0.999376
+  - 0.1017788
+  - 988.15
+  - -0.2465067
+  - 0.0247711
+  - -0.9688244
+  - 931.142
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0

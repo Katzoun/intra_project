@@ -1,0 +1,4 @@
+# Service definition for ServiceState.srv
+---
+string state
+string description

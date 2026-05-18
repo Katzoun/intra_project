@@ -1,0 +1,5 @@
+# Request: empty
+---
+bool status
+string message
+

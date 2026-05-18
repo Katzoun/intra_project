@@ -1,0 +1,4 @@
+tool_controller_parameters:
+  scene.flange_link: "tool0"
+  scene.publish_count: 2
+  scene.publish_delay: 0.3

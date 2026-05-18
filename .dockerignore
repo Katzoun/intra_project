@@ -1,0 +1,15 @@
+
+**/__pycache__
+**/install
+**/build
+**/log
+**/frames
+**/tmp
+**/.vscode
+**/playground
+**/garbage
+**/.git
+**/.gitignore
+**/docker-compose.yml
+**/Dockerfile
+**/.venv

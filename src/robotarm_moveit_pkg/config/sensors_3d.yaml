@@ -1,0 +1,14 @@
+sensors:
+  - pointcloud_sensor
+octomap_frame: base_link
+octomap_resolution: 0.005
+max_range: 4.0
+pointcloud_sensor:
+  sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+  point_cloud_topic: /camera_controller/points
+  max_range: 4.0
+  point_subsample: 1
+  padding_offset: 0.005
+  padding_scale: 1.0
+  max_update_rate: 1.0
+  filtered_cloud_topic: /filtered_cloud

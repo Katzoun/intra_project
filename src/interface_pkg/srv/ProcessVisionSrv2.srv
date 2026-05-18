@@ -1,0 +1,16 @@
+# Request
+string cad_model_path
+float64 voxel_size
+---
+# Response
+bool status
+string message
+geometry_msgs/Pose estimated_pose
+float64 fitness
+float64 rmse
+float64[16] icp_transform
+float64[16] ransac_transform
+sensor_msgs/PointCloud2 cad_pcd
+sensor_msgs/PointCloud2 scene_pcd
+sensor_msgs/PointCloud2 aligned_cad_pcd
+sensor_msgs/Image bg_mask_image

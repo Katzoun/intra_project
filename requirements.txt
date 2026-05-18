@@ -1,0 +1,45 @@
+# Environment variable support
+python-dotenv
+
+# Camera
+harvesters
+
+# Cryptography
+bcrypt
+pyjwt
+
+# UI framework
+nicegui
+fastapi
+urchin
+
+
+# Database
+sqlalchemy>=1.4.0
+psycopg2-binary>=2.9.0 
+alembic>=1.17.0 
+pydantic
+
+# Image processing
+scipy==1.10.1
+scikit-learn==1.3.2
+open3d
+shapely
+# plyfile
+
+trimesh
+
+# PyTorch (CPU version) - install with: pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# --extra-index-url https://download.pytorch.org/whl/cpu
+
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.7.0
+torchvision
+transformers==5.2.0
+
+
+#state machine
+python-statemachine[diagrams]==2.5.0
+
+# Testing
+pytest>=7,<8

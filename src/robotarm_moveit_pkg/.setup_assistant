@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: robotarm_pkg
+    relative_path: urdf/robotarm.urdf
+  srdf:
+    relative_path: config/robotarm.srdf
+  package_settings:
+    author_name: tomas
+    author_email: tomas@tomas.com
+    generated_timestamp: 1767347444
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

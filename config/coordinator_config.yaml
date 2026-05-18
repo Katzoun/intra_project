@@ -1,0 +1,3 @@
+coordinator_parameters:
+  wait_for_user_input: true
+  enable_rviz_tool_swap: true

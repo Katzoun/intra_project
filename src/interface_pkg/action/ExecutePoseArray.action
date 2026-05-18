@@ -1,0 +1,15 @@
+# Goal
+string motion_command
+string speed
+geometry_msgs/PoseArray path
+
+---
+# Result
+bool success
+string message
+int32 executed_count
+---
+# Feedback
+int32 current_index
+geometry_msgs/PoseStamped current_pose
+string state

@@ -1,0 +1,6 @@
+geometry_msgs/Pose goal_pose
+string planning_mode
+---
+bool status
+string message
+string waypoints_json

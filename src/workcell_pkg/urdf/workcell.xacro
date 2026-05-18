@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!--
+  INTRA workcell scene description.
+  Published by robot_state_publisher (remapped to /workcell_pkg).
+-->
+<robot name="workcell" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Root link – must match the robot URDF root frame -->
+  <link name="base_link"/>
+
+  <xacro:arg name="table_top_xyz" default="0.0794129001 0.7391550000 0.2043400000"/>
+  <xacro:arg name="table_top_rpy" default="0.0107934903 -0.0056877919 -0.0066021300"/>
+
+  <xacro:arg name="stationdock1_xyz" default="0 0 0"/>
+  <xacro:arg name="stationdock1_rpy" default="0 0 0"/>
+  <xacro:arg name="stationdock2_xyz" default="0 0 0"/>
+  <xacro:arg name="stationdock2_rpy" default="0 0 0"/>
+  <xacro:arg name="stationdock3_xyz" default="0 0 0"/>
+  <xacro:arg name="stationdock3_rpy" default="0 0 0"/>
+
+  <xacro:arg name="camera_xyz" default="0.597352 1.18321 1.18878"/>
+  <xacro:arg name="camera_rpy" default="-2.9722537224 -0.0657297262 3.0925205367"/>
+
+  <link name="table">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://workcell_pkg/meshes/table.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="gofa_base">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://workcell_pkg/meshes/gofabase.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="stationdock1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://workcell_pkg/meshes/stationdock.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="stationdock2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://workcell_pkg/meshes/stationdock.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="stationdock3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://workcell_pkg/meshes/stationdock.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="camera_link"/>
+
+
+  <!-- joints -->
+
+  <joint name="base_link_to_table_top" type="fixed">
+    <parent link="base_link"/>
+    <child link="table"/>
+    <origin xyz="$(arg table_top_xyz)" rpy="$(arg table_top_rpy)"/>
+  </joint>
+
+  <joint name="base_link_to_gofa_base" type="fixed">
+    <parent link="base_link"/>
+    <child link="gofa_base"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base_link_to_stationdock1" type="fixed">
+    <parent link="base_link"/>
+    <child link="stationdock1"/>
+    <origin xyz="$(arg stationdock1_xyz)" rpy="$(arg stationdock1_rpy)"/>
+  </joint>
+
+  <joint name="base_link_to_stationdock2" type="fixed">
+    <parent link="base_link"/>
+    <child link="stationdock2"/>
+    <origin xyz="$(arg stationdock2_xyz)" rpy="$(arg stationdock2_rpy)"/>
+  </joint>
+
+  <joint name="base_link_to_stationdock3" type="fixed">
+    <parent link="base_link"/>
+    <child link="stationdock3"/>
+    <origin xyz="$(arg stationdock3_xyz)" rpy="$(arg stationdock3_rpy)"/>
+  </joint>
+
+  <joint name="base_link_to_camera_link" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="$(arg camera_xyz)" rpy="$(arg camera_rpy)"/>
+  </joint>
+
+
+</robot>

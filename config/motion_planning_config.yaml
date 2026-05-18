@@ -1,0 +1,12 @@
+motion_planning_parameters:
+  planning.num_attempts: 20
+  planning.allowed_time: 4.0
+  planning.planner_id: RRTstar
+  planning.velocity_scaling: 0.1
+  planning.acceleration_scaling: 0.1
+  joint_space.position_tolerance: 0.001
+  joint_space.orientation_tolerance: 0.001
+  cartesian.max_step: 0.01
+  cartesian.jump_threshold: 0.0
+  cartesian.avoid_collisions: true
+  cartesian.min_fraction: 0.99

@@ -1,0 +1,6 @@
+string command
+string[] params
+---
+bool status
+string message
+int32 status_code

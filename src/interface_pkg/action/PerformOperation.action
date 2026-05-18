@@ -1,0 +1,35 @@
+# ── Goal ──
+string operation_name
+string[] params
+---
+# ── Result ──
+bool success
+string message
+---
+# ── Feedback ── most are empty when not applicable
+# Phase tracking
+string phase
+float32 progress
+string status_message
+
+# Images (segmentation masks, overlays, textures)
+sensor_msgs/Image[] images
+string[] image_labels
+
+# Point clouds (inlier pcds, raw scans)
+sensor_msgs/PointCloud2[] point_clouds
+string[] point_cloud_labels
+
+# Grasp results
+interface_pkg/GraspResult[] grasp_results
+
+geometry_msgs/Pose[] poses
+string[] pose_labels
+
+# Pose arrays (zigzag patterns, trajectories) 
+geometry_msgs/PoseArray[] pose_arrays
+string[] pose_array_labels
+
+# Plane models as flat [a,b,c,d, a,b,c,d, ...]
+float64[] plane_data
+string[] plane_labels

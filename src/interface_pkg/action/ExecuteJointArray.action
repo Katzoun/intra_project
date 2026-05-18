@@ -1,0 +1,13 @@
+# Goal
+string motion_command
+string speed
+interface_pkg/RobotJoints[] waypoints
+---
+# Result
+bool success
+string message
+int32 executed_count
+---
+# Feedback
+int32 current_index
+string state

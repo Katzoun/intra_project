@@ -1,0 +1,26 @@
+tools:
+  - id: gripper_1
+    collision:
+      type: mesh                        # "mesh" loads mesh, "cylinder"/"box" use primitives
+      mesh_file: hrot.stl             # filename inside TOOL_MESHES_DIR
+      scale: [0.001, 0.001, 0.001]     # STL units → metres (1.0 if already in metres)
+    collision_pose_in_flange:
+      translation: [0.0, 0.0, 0.0]   
+      rpy: [0.0, 0.0, 0.0]    
+  - id: gripper_2
+    collision:
+      type: mesh
+      mesh_file: gripper_sim.stl
+      scale: [0.001, 0.001, 0.001]
+    collision_pose_in_flange:
+      translation: [0.0, 0.0, 0.0]
+      rpy: [0.0, 0.0, 0.0]
+
+  - id: gripper_3
+    collision:
+      type: mesh
+      mesh_file: torch45.stl
+      scale: [0.001, 0.001, 0.001]
+    collision_pose_in_flange:
+      translation: [0.0, 0.0, 0.0]
+      rpy: [0.0, 0.0, 0.0]

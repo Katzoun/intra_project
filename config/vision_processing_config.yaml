@@ -1,0 +1,7 @@
+vision_processing_parameters:
+  general.debug_image_output: true
+  general.vizualize_o3d: false
+  operation1.use_sim_height: true
+  operation2.cad_model_path: "experimental/weldobj.stl"
+  operation2.pose_estimation_voxel_size: 2.0
+  operation2.pose_estimation_nb_neighbors: 30

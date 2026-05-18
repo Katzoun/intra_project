@@ -1,0 +1,16 @@
+.env
+#.vscode
+/.vscode/
+/frames
+/venvs/*
+!/venvs/.gitkeep
+/logs/
+/log
+/tmp
+/.nicegui
+**/__pycache__
+**/install
+**/build
+**/log
+.venv/*
+.old.venv/*
