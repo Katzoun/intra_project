@@ -45,7 +45,7 @@ Because the file is ~109 MB, it is stored via **Git LFS**. If you have Git LFS i
 **If you don't have Git LFS**, the cloned `abb_sim.rspag` will be only a small text pointer file instead of the real archive. To get the real file, either:
 
 - Install Git LFS and run `git lfs pull` inside the repo, **or**
-- Download the file directly from GitHub via the web UI ("Download raw file" on the file's page) and replace the pointer file in your local clone.
+- Download the file directly from GitHub via the web UI
 
 ---
 
