@@ -376,6 +376,8 @@ Institute of Automation and Computer Science
 Supervisor: prof. Ing. Zdeněk Hadaš, Ph.D.  
 Year: 2026
 
+This project is part of a master's thesis.
+
 ---
 
 ## License
