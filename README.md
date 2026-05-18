@@ -36,6 +36,19 @@ The application is designed to be hardware-agnostic at its core, with the curren
 
 ---
 
+## ABB RobotStudio Pack&Go
+
+The repository ships with `abb_sim.rspag` — an ABB RobotStudio Pack&Go file containing the full workcell simulation (robot, station, virtual controller). It can be used to run INTRA against a virtual ABB controller instead of physical hardware.
+
+Because the file is ~109 MB, it is stored via **Git LFS**. If you have Git LFS installed (`sudo apt install git-lfs && git lfs install`), it is fetched automatically on `git clone`.
+
+**If you don't have Git LFS**, the cloned `abb_sim.rspag` will be only a small text pointer file instead of the real archive. To get the real file, either:
+
+- Install Git LFS and run `git lfs pull` inside the repo, **or**
+- Download the file directly from GitHub via the web UI ("Download raw file" on the file's page) and replace the pointer file in your local clone.
+
+---
+
 ## Requirements
 
 | Component | Version |
