@@ -53,8 +53,8 @@ The application is designed to be hardware-agnostic at its core, with the curren
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Katzoun/master_project.git
-   cd master_project
+   git clone https://github.com/Katzoun/intra_project.git
+   cd intra_project
    ```
 
 2. **Create virtual environment and install dependencies:**
@@ -99,7 +99,7 @@ The web interface is available at **http://localhost:8080**.
 
 ## Architecture Overview
 
-INTRA is built bottom-up from reusable building blocks. All node communication uses ROS2 services and actions.
+INTRA is built bottom-up from reusable building blocks. All node communication uses ROS2 topics, services and actions.
 
 <p align="center">
   <img src="docs/syspackages.jpg" width="800">
